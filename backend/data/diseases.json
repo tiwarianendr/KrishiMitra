@@ -1,0 +1,879 @@
+{
+  "potato_early_blight": {
+    "crop": "Potato",
+    "crop_hi": "आलू",
+    "disease": "Early Blight (Alternaria solani)",
+    "disease_hi": "अगेती झुलसा (अल्टरनेरिया सोलानी)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "A common fungal disease caused by Alternaria solani that targets foliage, stems, and tubers, leading to premature defoliation and significant yield loss.",
+    "description_hi": "अल्टरनेरिया सोलानी कवक के कारण होने वाला रोग, जो पत्तियों, तनों और कंदों को प्रभावित करता है। इससे पत्तियां समय से पहले गिर जाती हैं और पैदावार में कमी आती है।",
+    "symptoms": [
+      "Circular brown-black spots with concentric rings ('target board' pattern) on older lower leaves.",
+      "Yellow halo around dark lesions.",
+      "Leaves turn brown, dry up, and drop prematurely."
+    ],
+    "symptoms_hi": [
+      "पुरानी निचली पत्तियों पर संकेंद्री छल्लों ('टारगेट बोर्ड') वाले भूरे-काले धब्बे।",
+      "काले धब्बों के चारों ओर पीला घेरा।",
+      "पत्तियां भूरी होकर सूखने और गिरने लगती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray Neem oil (5ml per liter of water) or Trichoderma viride bio-fungicide (2.5g per liter).",
+        "Apply copper-based fungicides such as Copper Hydroxide or Bordeaux mixture (1%).",
+        "Remove and destroy heavily infected lower foliage to reduce fungal spore count."
+      ],
+      "chemical": [
+        "Spray Mancozeb 75% WP @ 2.5 g/L or Chlorothalonil 75% WP @ 2 g/L at the first appearance of symptoms.",
+        "For severe infection, rotate with Azoxystrobin 23% SC @ 1 ml/L or Difenoconazole 25% EC @ 0.5 ml/L."
+      ]
+    },
+    "prevention": [
+      "Practice a 3-4 year crop rotation with non-solanaceous crops (avoid planting after tomato or pepper).",
+      "Use certified disease-free seed tubers.",
+      "Ensure proper plant spacing and drip irrigation to avoid wet foliage overnight.",
+      "Apply balanced potassium and nitrogen fertilization to prevent plant stress."
+    ],
+    "next_steps": "Isolate affected field sections, verify soil moisture, apply protective copper spray before rainfall, and inspect neighboring plants in 3 days."
+  },
+  "potato_late_blight": {
+    "crop": "Potato",
+    "crop_hi": "आलू",
+    "disease": "Late Blight (Phytophthora infestans)",
+    "disease_hi": "पछेती झुलसा (फाइटोफ्थोरा इन्फेस्टन्स)",
+    "is_healthy": false,
+    "severity": "Critical",
+    "description": "A devastating oomycete disease caused by Phytophthora infestans. Under cool and moist conditions, it can destroy entire fields within days.",
+    "description_hi": "फाइटोफ्थोरा इन्फेस्टन्स द्वारा होने वाला अति विनाशकारी रोग। ठंडे और नम मौसम में यह कुछ ही दिनों में पूरी फसल को नष्ट कर सकता है।",
+    "symptoms": [
+      "Water-soaked irregular pale to dark green lesions on leaf tips or margins.",
+      "White fungal mold visible on the underside of leaves during high humidity or morning dew.",
+      "Stems turn dark brown and tubers develop dry, firm rot with reddish-brown discoloration."
+    ],
+    "symptoms_hi": [
+      "पत्तियों के किनारों या सिरों पर पानी से भीगे हुए अनियमित गहरे हरे या काले धब्बे।",
+      "अधिक नमी या ओस के समय पत्तियों की निचली सतह पर सफेद फफूंद दिखाई देना।",
+      "तने गहरे भूरे हो जाते हैं और आलू के कंद सड़ने लगते हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Immediately remove and burn infected plant debris (do not compost).",
+        "Apply Bordeaux mixture (1%) or Copper oxychloride (3 g/L) prophylactically.",
+        "Spray bio-fungicides like Bacillus subtilis formulations."
+      ],
+      "chemical": [
+        "Curative spray of Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ) @ 2.5 g/L at disease outbreak.",
+        "Follow up with Cymoxanil 8% + Mancozeb 64% WP @ 2 g/L or Dimethomorph 50% WP @ 1 g/L after 7-10 days."
+      ]
+    },
+    "prevention": [
+      "Plant resistant or tolerant varieties (e.g., Kufri Girdhari, Kufri Jyoti, Kufri Himalini).",
+      "Never use seed potatoes showing brown skin lesions.",
+      "Avoid overhead sprinkler irrigation; irrigate early in the morning.",
+      "Monitor weather forecasts for low temperatures (<20°C) combined with high humidity (>90%)."
+    ],
+    "next_steps": "Act immediately within 24 hours. Spray systemic fungicide across the entire plot and notify neighboring farmers."
+  },
+  "potato_healthy": {
+    "crop": "Potato",
+    "crop_hi": "आलू",
+    "disease": "Healthy Plant",
+    "disease_hi": "स्वस्थ पौधा",
+    "is_healthy": true,
+    "severity": "None",
+    "description": "The potato foliage exhibits vibrant green color, strong leaf vigor, and no observable signs of pathogenic lesions or pest infestation.",
+    "description_hi": "आलू के पौधे की पत्तियां हरी-भरी, मजबूत और किसी भी रोग या कीट संक्रमण से मुक्त हैं।",
+    "symptoms": [
+      "Uniform deep green leaf canopy.",
+      "No visible spots, curling, or fungal growth.",
+      "Sturdy stem development and healthy vegetative growth."
+    ],
+    "symptoms_hi": [
+      "पत्तियां एक समान गहरी हरी और स्वस्थ हैं।",
+      "कोई धब्बा, मरोड़ या फफूंद नहीं है।",
+      "मजबूत तना और अच्छा वानस्पतिक विकास।"
+    ],
+    "treatment": {
+      "organic": [
+        "Maintain routine soil health with well-rotted vermicompost (2-3 tonnes/acre).",
+        "Apply preventive Jeevamrut or Panchagavya sprays every 15 days."
+      ],
+      "chemical": [
+        "No chemical intervention needed. Avoid unnecessary synthetic fungicide applications."
+      ]
+    },
+    "prevention": [
+      "Continue regular irrigation intervals without waterlogging.",
+      "Scout the field twice a week, inspecting leaf undersides for early signs of aphids or blight.",
+      "Earth up soil around the potato hills at 30-35 days after planting."
+    ],
+    "next_steps": "Maintain scheduled nutrient feeding (balanced NPK) and scout regularly during flowering and tuber formation stages."
+  },
+  "tomato_bacterial_spot": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Bacterial Spot (Xanthomonas spp.)",
+    "disease_hi": "जीवाणु धब्बा रोग (जैंथोमोनास)",
+    "is_healthy": false,
+    "severity": "High",
+    "description": "Bacterial disease caused by Xanthomonas species that attacks leaves, stems, and fruit, resulting in severe defoliation and sun-scalded fruit.",
+    "description_hi": "जैंथोमोनास बैक्टीरिया द्वारा फैलने वाला रोग, जो पत्तियों, तनों और फलों को प्रभावित करता है, जिससे फल खराब हो जाते हैं।",
+    "symptoms": [
+      "Small, angular, greasy, dark brown to black spots (1-3 mm) on leaves.",
+      "Spots may develop yellow halos and drop out, creating a 'shot-hole' appearance.",
+      "Raised black scab-like lesions on green and ripening tomatoes."
+    ],
+    "symptoms_hi": [
+      "पत्तियों पर छोटे, कोणीय, तेलीय, गहरे भूरे या काले धब्बे।",
+      "धब्बे सूखकर गिर सकते हैं जिससे छलनी जैसा प्रभाव होता है।",
+      "कच्चे और पके टमाटरों पर उभरे हुए काले खुरदुरे धब्बे।"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray Streptomyces-based bio-bactericide or Bacillus subtilis.",
+        "Apply Copper Hydroxide combined with Mancozeb to reduce copper resistance in bacteria."
+      ],
+      "chemical": [
+        "Spray Streptocycline (Streptomycin sulphate + Tetracycline) @ 6 g in 50 L water combined with Copper Oxychloride 50% WP @ 2.5 g/L."
+      ]
+    },
+    "prevention": [
+      "Treat seeds with hot water (50°C for 25 minutes) before sowing.",
+      "Avoid handling wet plants and sterilize pruning tools between rows.",
+      "Implement drip irrigation to keep canopy dry."
+    ],
+    "next_steps": "Remove severely infected branches, sterilize harvesting shears, and spray bactericide during dry weather."
+  },
+  "tomato_early_blight": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Early Blight (Alternaria solani)",
+    "disease_hi": "अगेती झुलसा (अल्टरनेरिया सोलानी)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Fungal infection affecting tomato leaves, stems, and fruit calyx, primarily targeting stressed or older foliage.",
+    "description_hi": "टमाटर का सामान्य फफूंद जनित रोग जो निचली पत्तियों, तनों और फलों पर संकेंद्री छल्लों वाले धब्बे बनाता है।",
+    "symptoms": [
+      "Brown to black spots with concentric rings, mostly on lower foliage.",
+      "Yellowing of surrounding leaf tissue (chlorosis).",
+      "Sunken, leathery dark lesions at the stem end of fruits."
+    ],
+    "symptoms_hi": [
+      "निचली पत्तियों पर छल्लेदार गोल भूरे-काले धब्बे।",
+      "धब्बों के आसपास पत्ती का पीला पड़ना।",
+      "फल के डंठल के पास धंसे हुए चमड़े जैसे काले धब्बे।"
+    ],
+    "treatment": {
+      "organic": [
+        "Prune bottom 12 inches of leaves to prevent soil splash.",
+        "Spray Neem seed kernel extract (5%) or Copper oxychloride."
+      ],
+      "chemical": [
+        "Mancozeb 75% WP @ 2.5 g/L or Azoxystrobin 18.2% + Difenoconazole 11.4% SC @ 1 ml/L."
+      ]
+    },
+    "prevention": [
+      "Stake and cage tomato plants to improve air circulation.",
+      "Mulch soil heavily with clean straw or plastic mulch.",
+      "Avoid overhead watering."
+    ],
+    "next_steps": "Prune lower infected leaves, apply mulch, and apply protective fungicide."
+  },
+  "tomato_late_blight": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Late Blight (Phytophthora infestans)",
+    "disease_hi": "पछेती झुलसा (फाइटोफ्थोरा इन्फेस्टन्स)",
+    "is_healthy": false,
+    "severity": "Critical",
+    "description": "Rapidly spreading aggressive water mold causing rapid collapse of tomato foliage and rot of unripe and ripe fruit.",
+    "description_hi": "अत्यंत आक्रामक फफूंद रोग जो नम मौसम में टमाटर की पत्तियों, तनों और फलों को तेजी से सड़ा देता है।",
+    "symptoms": [
+      "Large, irregular water-soaked spots rapidly turning dark brown/purplish.",
+      "White fungal downy growth on the underside of leaves during humid mornings.",
+      "Firm, dark, greasy brown rot patches on fruit."
+    ],
+    "symptoms_hi": [
+      "पत्तियों पर बड़े, पानी से भीगे हुए भूरे-बैंगनी धब्बे।",
+      "सुबह के समय पत्ती के नीचे सफेद फफूंद।",
+      "फलों पर गहरे, सख्त, तैलीय भूरे सड़न वाले धब्बे।"
+    ],
+    "treatment": {
+      "organic": [
+        "Destroy and bury diseased foliage immediately.",
+        "Spray copper soap or Bordeaux mixture preventive spray."
+      ],
+      "chemical": [
+        "Spray Metalaxyl 8% + Mancozeb 64% WP @ 2.5 g/L or Cymoxanil 8% + Mancozeb 64% WP @ 2 g/L.",
+        "Alternatively apply Dimethomorph 50% WP @ 1 g/L."
+      ]
+    },
+    "prevention": [
+      "Avoid planting near potato fields.",
+      "Ensure wide row spacing (minimum 60-75 cm).",
+      "Plant late blight-resistant cultivars."
+    ],
+    "next_steps": "Spray immediately across the entire crop block; ensure complete foliage coverage including leaf undersides."
+  },
+  "tomato_leaf_mold": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Leaf Mold (Passalora fulva)",
+    "disease_hi": "पत्ती का फफूंद (पासालोरा फुल्वा)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Fungal disease thriving in high relative humidity (>85%) and moderate temperatures, very common in polyhouses and dense canopies.",
+    "description_hi": "उच्च आर्द्रता और मध्यम तापमान में तेजी से फैलने वाला रोग, जो पॉलीहाउस और घनी फसलों में अधिक देखा जाता है।",
+    "symptoms": [
+      "Pale green to yellow spots on the upper leaf surface with indefinite margins.",
+      "Olive-green to brown velvety fungal growth directly beneath the spots on leaf undersides.",
+      "Severe infections cause leaves to curl, wither, and drop."
+    ],
+    "symptoms_hi": [
+      "पत्ती की ऊपरी सतह पर हल्के हरे से पीले धब्बे।",
+      "पत्ती के नीचे मखमली जैतूनी-भूरे रंग की फफूंद।",
+      "पत्तियां मुड़कर सूखने और झड़ने लगती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Increase ventilation and airflow in greenhouses/tunnels.",
+        "Spray Potassium bicarbonate (3 g/L) or Copper octanoate."
+      ],
+      "chemical": [
+        "Spray Chlorothalonil 75% WP @ 2 g/L or Difenoconazole 25% EC @ 0.5 ml/L."
+      ]
+    },
+    "prevention": [
+      "Keep greenhouse humidity below 80% via proper exhaust venting.",
+      "Space plants generously to promote leaf drying.",
+      "Water soil directly; avoid wetting foliage."
+    ],
+    "next_steps": "Increase airflow, thin dense leaf clusters, and apply copper or chlorothalonil spray."
+  },
+  "tomato_septoria_leaf_spot": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Septoria Leaf Spot (Septoria lycopersici)",
+    "disease_hi": "सेप्टोरिया पत्ती धब्बा (सेप्टोरिया लाइकोपरसिकी)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Destructive fungal foliar disease that causes progressive upward leaf loss from ground level, reducing fruit yields and exposing tomatoes to sunscald.",
+    "description_hi": "फंगल रोग जो नीचे से शुरू होकर ऊपर की पत्तियों को गिरा देता है, जिससे फल धूप से झुलस जाते हैं।",
+    "symptoms": [
+      "Numerous small circular spots (2-3 mm) with dark brown margins and gray or tan centers.",
+      "Tiny black specks (pycnidia fruiting bodies) inside the light centers.",
+      "Leaves turn yellow and fall off."
+    ],
+    "symptoms_hi": [
+      "गहरे भूरे किनारों और भूरे-सफेद केंद्र वाले छोटे गोल धब्बे (2-3 मिमी)।",
+      "धब्बे के केंद्र में छोटे काले बिंदु (कवक के बीज)।",
+      "पत्तियां पीली होकर तेजी से झड़ जाती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Prune and discard infected leaves as soon as first noticed.",
+        "Apply organic copper fungicide every 7 to 10 days."
+      ],
+      "chemical": [
+        "Spray Chlorothalonil 75% WP @ 2 g/L or Mancozeb 75% WP @ 2.5 g/L."
+      ]
+    },
+    "prevention": [
+      "Crop rotation of at least 2 years without nightshades.",
+      "Apply thick layer of mulch around the base of plants.",
+      "Avoid overhead sprinkler irrigation."
+    ],
+    "next_steps": "Remove fallen and infected lower leaves from the plot, renew mulch, and apply fungicide."
+  },
+  "tomato_spider_mites": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Two-Spotted Spider Mite Infestation (Tetranychus urticae)",
+    "disease_hi": "मकड़ी कीट / लाल मकड़ी (टेट्रानिकस अर्टिकी)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Microscopic sap-sucking arachnids that multiply rapidly during hot, dry weather, stippling leaves and spinning protective fine webbing.",
+    "description_hi": "सूक्ष्म कीट जो गर्म और शुष्क मौसम में तेजी से पनपते हैं, पत्तियों का रस चूसते हैं और बारीक जाले बनाते हैं।",
+    "symptoms": [
+      "Fine yellow or white stippling (speckling) on upper leaf surface.",
+      "Leaves turn bronze or grayish-yellow and become papery.",
+      "Silken webs visible on leaf undersides, growing tips, and flower clusters."
+    ],
+    "symptoms_hi": [
+      "पत्तियों की ऊपरी सतह पर बारीक पीले या सफेद चित्तीदार बिंदु।",
+      "पत्तियां तांबे जैसी या पीली होकर सूखने लगती हैं।",
+      "पत्तियों के नीचे और कोमल शाखाओं पर बारीक रेशमी जाले।"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray Neem oil 1500 ppm @ 4 ml/L or Horticultural mineral oil.",
+        "Release predatory mites (Phytoseiulus persimilis).",
+        "Wash plant canopies with strong water spray early in the day to knock down populations."
+      ],
+      "chemical": [
+        "Spray Spiromesifen 22.9% SC (Oberon) @ 1 ml/L or Propargite 57% EC @ 2 ml/L or Abamectin 1.9% EC @ 0.75 ml/L."
+      ]
+    },
+    "prevention": [
+      "Maintain adequate soil hydration and avoid dusty conditions.",
+      "Avoid excessive synthetic nitrogen fertilizers, which trigger mite surges.",
+      "Regularly scout leaf undersides using a 10x magnifying hand lens."
+    ],
+    "next_steps": "Hose down foliage to disrupt webs, then apply miticide or neem oil ensuring full underside coverage."
+  },
+  "tomato_target_spot": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Target Spot (Corynespora cassiicola)",
+    "disease_hi": "टारगेट स्पॉट (कोरीनेस्पोरा कैसिकोला)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Foliar and fruit fungal disease favored by warm, humid, tropical and subtropical conditions.",
+    "description_hi": "गर्म और आर्द्र मौसम में फैलने वाला कवक रोग जो पत्तियों और फलों पर केंद्रित गोल धब्बे बनाता है।",
+    "symptoms": [
+      "Small pinhead brown spots enlarging into target-like lesions with pale centers and dark brown margins.",
+      "Fruit develops round brown sunken pits with concentric cracking."
+    ],
+    "symptoms_hi": [
+      "छोटे भूरे धब्बे जो बढ़कर संकेंद्री छल्लों में बदल जाते हैं।",
+      "फलों पर गोल, धंसे हुए भूरे गड्ढे और दरारें।"
+    ],
+    "treatment": {
+      "organic": [
+        "Copper hydroxide spray @ 2 g/L.",
+        "Remove lower leaves to increase ground air circulation."
+      ],
+      "chemical": [
+        "Spray Azoxystrobin 11% + Tebuconazole 18.3% SC @ 1.5 ml/L or Chlorothalonil 75% WP @ 2 g/L."
+      ]
+    },
+    "prevention": [
+      "Provide generous spacing between rows.",
+      "Avoid overhead watering.",
+      "Eliminate weed hosts around field margins."
+    ],
+    "next_steps": "Improve airflow, eliminate affected foliage, and treat with broad-spectrum fungicide."
+  },
+  "tomato_yellow_leaf_curl_virus": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "disease_hi": "टमाटर पर्ण कुंचन विषाणु (लीफ कर्ल वायरस)",
+    "is_healthy": false,
+    "severity": "High",
+    "description": "A devastating viral disease transmitted by the silverleaf whitefly (Bemisia tabaci) that causes severe stunting and catastrophic fruit drop.",
+    "description_hi": "सफेद मक्खी (बेमिसिया तबासी) द्वारा फैलाया जाने वाला भयानक वायरस, जिससे पौधा बौना हो जाता है और फल नहीं लगते।",
+    "symptoms": [
+      "Severe upward curling and cupping of leaflets.",
+      "Marked marginal and interveinal yellowing (chlorosis) of young shoots.",
+      "Stunted bushy plant growth, flower abortion, and drastic reduction in fruit set."
+    ],
+    "symptoms_hi": [
+      "पत्तियों का ऊपर की ओर मुड़ना (कटोरी जैसा आकार)।",
+      "नई पत्तियों का पीला पड़ना।",
+      "पौधे का कद छोटा और झाड़ीदार होना, फूल झड़ना और फल न लगना।"
+    ],
+    "treatment": {
+      "organic": [
+        "Eradicate and bag infected plants immediately to prevent vector spread.",
+        "Install yellow sticky traps (15-20 traps per acre) to trap whiteflies.",
+        "Spray Neem oil (5 ml/L) or Verticillium lecanii bio-insecticide."
+      ],
+      "chemical": [
+        "Control whitefly vectors using Acetamiprid 20% SP @ 0.5 g/L or Thiamethoxam 25% WG @ 0.3 g/L or Imidacloprid 17.8% SL @ 0.5 ml/L."
+      ]
+    },
+    "prevention": [
+      "Grow virus-resistant hybrid cultivars (e.g., US-440, NS-501).",
+      "Use 40-50 mesh insect-proof netting in nurseries.",
+      "Eliminate solanaceous weeds around field borders."
+    ],
+    "next_steps": "Remove virus-infected plants immediately; control whitefly vector with insecticidal spray."
+  },
+  "tomato_mosaic_virus": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Tomato Mosaic Virus (ToMV)",
+    "disease_hi": "टमाटर मोज़ेक वायरस (टीओएमवी)",
+    "is_healthy": false,
+    "severity": "High",
+    "description": "Extremely stable mechanical and seed-transmitted tobamovirus causing leaf mottling, deformation, and uneven fruit ripening.",
+    "description_hi": "अत्यंत संक्रामक वायरस जो हाथों, औजारों और बीजों से फैलता है। पत्तियों पर चितकबरे निशान और फलों पर विकृति आती है।",
+    "symptoms": [
+      "Mottling with alternating light and dark green patches on leaves.",
+      "Fern-like or shoestring distorted leaves.",
+      "Brown internal browning in fruit walls and uneven ripening."
+    ],
+    "symptoms_hi": [
+      "पत्तियों पर हल्के और गहरे हरे रंग के चितकबरे धब्बे।",
+      "पत्तियों का सिकुड़कर पतली पट्टी जैसा बन जाना।",
+      "फलों के पकने में असमानता और अंदरूनी भूरापन।"
+    ],
+    "treatment": {
+      "organic": [
+        "Roguing: Dig up and burn infected plants.",
+        "Dip hands and tools in 20% non-fat dry milk solution before pruning.",
+        "No chemical cure exists for viral pathogens."
+      ],
+      "chemical": [
+        "Viruses cannot be cured with chemicals. Manage aphids and chewing pests to minimize stress."
+      ]
+    },
+    "prevention": [
+      "Use certified virus-free seed treated with 10% trisodium phosphate (TSP).",
+      "Wash hands thoroughly with soap before handling tomato plants.",
+      "Plant TMV/ToMV-resistant tomato varieties."
+    ],
+    "next_steps": "Uproot infected plants with root ball, sterilize all tools with bleach/milk, wash hands thoroughly."
+  },
+  "tomato_healthy": {
+    "crop": "Tomato",
+    "crop_hi": "टमाटर",
+    "disease": "Healthy Plant",
+    "disease_hi": "स्वस्थ पौधा",
+    "is_healthy": true,
+    "severity": "None",
+    "description": "Vigorous tomato plant with strong foliage, clear dark green leaves, healthy flowers, and normal fruit set without disease signs.",
+    "description_hi": "स्वस्थ और मजबूत टमाटर का पौधा, गहरी हरी पत्तियां, अच्छे फूल और रोगमुक्त फल।",
+    "symptoms": [
+      "Lush green foliage free of chlorosis or necrosis.",
+      "Vigorous apical shoot growth and sturdy stems.",
+      "Abundant flowering and uniform fruit cluster development."
+    ],
+    "symptoms_hi": [
+      "स्वस्थ और हरी-भरी पत्तियां।",
+      "मजबूत मुख्य तना और अच्छी बढ़वार।",
+      "अच्छी फ्लावरिंग और समान आकार के फलों के गुच्छे।"
+    ],
+    "treatment": {
+      "organic": [
+        "Continue compost tea / Panchagavya foliar nutrition every 15 days.",
+        "Mulch beds to conserve soil moisture and prevent weeds."
+      ],
+      "chemical": [
+        "No chemical application required."
+      ]
+    },
+    "prevention": [
+      "Provide regular support trellising and suckering.",
+      "Maintain consistent drip irrigation to avoid blossom end rot.",
+      "Scout foliage weekly for whiteflies or fungal flecks."
+    ],
+    "next_steps": "Continue regular nutrient management and monitor fruit development."
+  },
+  "rice_bacterial_leaf_blight": {
+    "crop": "Rice",
+    "crop_hi": "धान / चावल",
+    "disease": "Bacterial Leaf Blight (Xanthomonas oryzae)",
+    "disease_hi": "जीवाणु झुलसा रोग (बैक्टीरियल लीफ ब्लाइट)",
+    "is_healthy": false,
+    "severity": "High",
+    "description": "A destructive vascular disease of rice across Asia. Warm temperatures, high humidity, and heavy rains accelerate infection.",
+    "description_hi": "धान की एक गंभीर जीवाणु जनित बीमारी जो पत्तियों के किनारों से शुरू होकर पूरे पत्ते को सुखा देती है।",
+    "symptoms": [
+      "Water-soaked stripes starting from leaf tips and margins, expanding into yellow-to-white wavy lesions.",
+      "Milky bacterial ooze droplets on young lesions in early morning.",
+      "Leaves wilt, turn grayish-white, and roll inward (kresek wilt phase)."
+    ],
+    "symptoms_hi": [
+      "पत्तियों के सिरे और किनारों से शुरू होने वाले पीले-सफेद लहरदार धब्बे।",
+      "सुबह के समय पत्ती पर जीवाणु की दूधिया बूंदें दिखाई देना।",
+      "पत्तियां सूखकर भूरी-सफेद हो जाती हैं और सूखने लगती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Drain field water for 3 to 4 days to reduce moisture.",
+        "Apply Pseudomonas fluorescens @ 10 g/L as foliar spray."
+      ],
+      "chemical": [
+        "Spray Streptocycline @ 15 g + Copper Oxychloride @ 500 g in 200 L water per acre.",
+        "Apply Plantomycin @ 1 g/L at the first symptom appearance."
+      ]
+    },
+    "prevention": [
+      "Avoid excess nitrogen fertilizer; split nitrogen applications into 3-4 doses.",
+      "Plant resistant varieties (e.g., Improved Samba Mahsuri, IR-64 Drt1).",
+      "Treat seeds with Streptocycline (1 g/10 L water) before nursery sowing."
+    ],
+    "next_steps": "Suspend nitrogen top-dressing immediately; drain standing field water and spray copper-bactericide mixture."
+  },
+  "rice_brown_spot": {
+    "crop": "Rice",
+    "crop_hi": "धान / चावल",
+    "disease": "Brown Spot (Bipolaris oryzae)",
+    "disease_hi": "भूरा धब्बा रोग (ब्राउन स्पॉट)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Fungal disease strongly associated with nutrient-deficient or water-stressed soils (especially silica, potassium, and nitrogen deficiencies).",
+    "description_hi": "धान का कवक जनित रोग जो पोषक तत्वों की कमी और पानी के तनाव वाले खेतों में अधिक फैलता है।",
+    "symptoms": [
+      "Small, circular to oval sesame-seed shaped brown spots with gray or whitish centers.",
+      "Dark brown margin surrounded by a yellow halo.",
+      "Infected grains show blackish discolored hulls and poor filling."
+    ],
+    "symptoms_hi": [
+      "तिल के बीज जैसे अंडाकार भूरे धब्बे जिनके बीच का भाग भूरा-सफेद होता है।",
+      "धब्बे के चारों तरफ पीला घेरा।",
+      "धान की बालियों और दानों पर काले-भूरे धब्बे और दाने का कमजोर होना।"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply neem cake (100 kg/acre) and zinc sulfate (10 kg/acre).",
+        "Spray Pseudomonas fluorescens (2.5 g/L)."
+      ],
+      "chemical": [
+        "Spray Tricyclazole 75% WP @ 0.6 g/L or Propiconazole 25% EC (Tilt) @ 1 ml/L or Hexaconazole 5% EC @ 2 ml/L."
+      ]
+    },
+    "prevention": [
+      "Soil test and correct potassium, zinc, and silica deficiencies.",
+      "Seed treatment with Carbendazim 50% WP @ 2 g/kg seed.",
+      "Maintain adequate standing water (2-5 cm) during tillering and panicle initiation."
+    ],
+    "next_steps": "Apply top-dress potassium/zinc; spray systemic triazole fungicide."
+  },
+  "rice_leaf_smut": {
+    "crop": "Rice",
+    "crop_hi": "धान / चावल",
+    "disease": "Leaf Smut (Entyloma oryzae)",
+    "disease_hi": "लीफ स्मट (पत्ती का कंडुआ रोग)",
+    "is_healthy": false,
+    "severity": "Low",
+    "description": "Fungal disease causing small raised black spots on mature rice leaves, typically appearing later in the crop cycle.",
+    "description_hi": "धान की परिपक्व पत्तियों पर छोटे उभरे हुए काले कोणीय धब्बे बनाने वाला कवक रोग।",
+    "symptoms": [
+      "Small, angular, slightly raised black spots on both sides of the leaf.",
+      "Spots remain distinct and do not easily coalesce.",
+      "Severely affected leaves may turn yellow from tips down."
+    ],
+    "symptoms_hi": [
+      "पत्तियों की दोनों सतहों पर छोटे, कोणीय और उभरे हुए काले धब्बे।",
+      "धब्बे अलग-अलग रहते हैं और एक दूसरे से कम मिलते हैं।",
+      "ज्यादा प्रकोप होने पर पत्तियां सिरों से पीली पड़ने लगती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply balanced farmyard manure; avoid excessive chemical stimulants.",
+        "Spray garlic-chili extract or cow urine formulation (10%)."
+      ],
+      "chemical": [
+        "Spray Propiconazole 25% EC @ 1 ml/L or Mancozeb 75% WP @ 2 g/L."
+      ]
+    },
+    "prevention": [
+      "Avoid late sowing.",
+      "Use balanced NPK fertilizers (e.g., 120:60:40 kg/ha).",
+      "Burn or bury stubble after harvest."
+    ],
+    "next_steps": "Monitor plot; usually economic threshold is not breached unless accompanied by blast or sheath blight."
+  },
+  "rice_healthy": {
+    "crop": "Rice",
+    "crop_hi": "धान / चावल",
+    "disease": "Healthy Rice Crop",
+    "disease_hi": "स्वस्थ धान की फसल",
+    "is_healthy": true,
+    "severity": "None",
+    "description": "Vibrant, emerald green rice tillers with clean upright leaves, optimal tillering density, and vigorous root system.",
+    "description_hi": "धान की स्वस्थ, हरी-भरी फसल जिसमें कल्ले अच्छे फूट रहे हैं और पत्तियां रोगमुक्त हैं।",
+    "symptoms": [
+      "Uniform lush green canopy without lesions or chlorosis.",
+      "Clean flag leaves and healthy tillers.",
+      "Robust root growth with white active feeder roots."
+    ],
+    "symptoms_hi": [
+      "पूरी फसल एक समान हरी और चमकदार।",
+      "साफ ध्वज पत्ती (फ्लैग लीफ) और भरपूर कल्ले।",
+      "सफेद और मजबूत जड़ें।"
+    ],
+    "treatment": {
+      "organic": [
+        "Maintain water level at 2-5 cm.",
+        "Apply Azospirillum and Phosphobacteria biofertilizers."
+      ],
+      "chemical": [
+        "No chemical intervention needed."
+      ]
+    },
+    "prevention": [
+      "Maintain water regime (alternate wetting and drying).",
+      "Scout borders weekly for brown planthopper and stem borer presence."
+    ],
+    "next_steps": "Continue scheduled irrigation and split urea/potash top-dressing."
+  },
+  "wheat_yellow_rust": {
+    "crop": "Wheat",
+    "crop_hi": "गेहूं",
+    "disease": "Stripe Rust / Yellow Rust (Puccinia striiformis)",
+    "disease_hi": "पीला रतुआ / स्ट्राइप रस्ट (पक्सिनिया स्ट्राइफॉर्मिस)",
+    "is_healthy": false,
+    "severity": "Critical",
+    "description": "Devastating airborne fungal disease of wheat favored by cool (10-15°C) and humid weather. Can cause total crop failure if unmanaged.",
+    "description_hi": "ठंडे और नम मौसम में तेजी से फैलने वाला अत्यंत खतरनाक कवक रोग, जो गेहूं की पूरी पैदावार को बर्बाद कर सकता है।",
+    "symptoms": [
+      "Bright yellow to orange pustules arranged in parallel linear stripes along leaf veins.",
+      "Yellow powder rubs off onto fingers or clothes when touched.",
+      "Leaves turn brown, dry out, and look scorched."
+    ],
+    "symptoms_hi": [
+      "पत्तियों की नसों के समानांतर पीली-नारंगी धारियों में उभरे हुए दानेदार फफोले।",
+      "हाथ लगाने पर उंगलियों पर पीला पाउडर चिपकना।",
+      "पत्तियां भूरी होकर जलने जैसी सूख जाती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Early morning foliar spray of sour buttermilk (chaas 5%) or Trichoderma viride.",
+        "Destroy initial infection foci patches."
+      ],
+      "chemical": [
+        "Immediate spray of Propiconazole 25% EC (Tilt) @ 1 ml/L (200 ml in 200 L water/acre).",
+        "Or Tebuconazole 25.9% EC @ 1 ml/L. Repeat after 15 days if yellow stripes persist."
+      ]
+    },
+    "prevention": [
+      "Sow rust-resistant wheat varieties (e.g., HD-2967, HD-3086, DBW-187, DBW-222, PBW-550).",
+      "Avoid planting overly late in the rabi season.",
+      "Conduct regular survey of foot-hill and moist border areas."
+    ],
+    "next_steps": "Urgent action: spray Propiconazole 25% EC within 48 hours across the entire field."
+  },
+  "wheat_brown_rust": {
+    "crop": "Wheat",
+    "crop_hi": "गेहूं",
+    "disease": "Leaf Rust / Brown Rust (Puccinia triticina)",
+    "disease_hi": "भूरा रतुआ / लीफ रस्ट (पक्सिनिया ट्रिटिसिना)",
+    "is_healthy": false,
+    "severity": "High",
+    "description": "Most widespread wheat rust disease, favored by warm temperatures (20-25°C) and dew or moisture.",
+    "description_hi": "गेहूं का व्यापक रतुआ रोग जो 20-25 डिग्री तापमान और नमी में तेजी से फैलता है।",
+    "symptoms": [
+      "Small, round to oval, scattered brown/cinnamon-colored pustules on upper leaf surface.",
+      "Pustules do not form stripes; they are randomly scattered across the blade.",
+      "Dusty reddish-brown spore powder transfers to fingers."
+    ],
+    "symptoms_hi": [
+      "पत्तियों की ऊपरी सतह पर गोल या अंडाकार बिखरे हुए भूरे-कतई फफोले।",
+      "फफोले किसी सीधी रेखा में न होकर पूरे पत्ते पर फैले होते हैं।",
+      "हाथ लगाने पर कत्थई रंग का चूर्ण निकलता है।"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray cow urine extract (10%) or bio-fungicide formulations."
+      ],
+      "chemical": [
+        "Spray Propiconazole 25% EC @ 1 ml/L or Mancozeb 75% WP @ 2.5 g/L."
+      ]
+    },
+    "prevention": [
+      "Use certified rust-resistant wheat seed.",
+      "Avoid excessive nitrogen applications which promote lush susceptible tissue."
+    ],
+    "next_steps": "Apply protective triazole fungicide spray."
+  },
+  "wheat_powdery_mildew": {
+    "crop": "Wheat",
+    "crop_hi": "गेहूं",
+    "disease": "Powdery Mildew (Blumeria graminis f. sp. tritici)",
+    "disease_hi": "चूर्णिल आसिता / पाउडरी मिल्ड्यू (ब्लूमेरिया ग्रामिनिस)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Fungal disease characterized by fluffy white-to-gray powder patches on foliage in dense, shaded, cool crops.",
+    "description_hi": "घनी और छायादार फसलों में सफेद आटे जैसा पाउडर बनाने वाला फफूंद रोग।",
+    "symptoms": [
+      "White fluffy cotton-like fungal patches on leaf surfaces and lower stems.",
+      "Patches age into dull gray-brown mats with small black speck cleistothecia.",
+      "Affected leaves yellow and senesce prematurely."
+    ],
+    "symptoms_hi": [
+      "पत्तियों और निचले तने पर सफेद रुई जैसे पाउडर के धब्बे।",
+      "पुराने होने पर धब्बे मटमैले भूरे हो जाते हैं।",
+      "पत्तियां पीली होकर समय से पहले सूख जाती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Foliar spray of Wettable Sulfur 80% WP @ 3 g/L.",
+        "Spray potassium silicate or baking soda solution (3 g/L with soap)."
+      ],
+      "chemical": [
+        "Spray Hexaconazole 5% EC @ 2 ml/L or Propiconazole 25% EC @ 1 ml/L."
+      ]
+    },
+    "prevention": [
+      "Adopt optimum seed rate to prevent overcrowded plant density.",
+      "Ensure proper sunlight penetration."
+    ],
+    "next_steps": "Spray wettable sulfur or hexaconazole."
+  },
+  "wheat_healthy": {
+    "crop": "Wheat",
+    "crop_hi": "गेहूं",
+    "disease": "Healthy Wheat Crop",
+    "disease_hi": "स्वस्थ गेहूं की फसल",
+    "is_healthy": true,
+    "severity": "None",
+    "description": "Strong green wheat canopy with clear erect leaves, healthy tillering, and no signs of rust pustules or powdery fungal patches.",
+    "description_hi": "गेहूं का स्वस्थ और हरा-भरा पौधा, सीधी पत्तियां, बिना किसी रतुआ या फफूंद के निशान।",
+    "symptoms": [
+      "Clean, erect green leaves with no rust pustules or chlorosis.",
+      "Uniform spike emergence and healthy boot stage development.",
+      "Stout stalks resistant to lodging."
+    ],
+    "symptoms_hi": [
+      "बिना किसी धब्बे या फफोले के साफ हरी पत्तियां।",
+      "एक समान बालियां और अच्छा विकास।",
+      "मजबूत तना जो गिरने से रोकता है।"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply vermiwash or cow urine spray (5%) for micronutrient boost."
+      ],
+      "chemical": [
+        "No chemical fungicide needed."
+      ]
+    },
+    "prevention": [
+      "Apply critical irrigations at CRI, tillering, jointing, flowering, and grain filling stages.",
+      "Scout borders weekly during cool foggy spells."
+    ],
+    "next_steps": "Ensure timely irrigation at the critical grain filling stage."
+  },
+  "pea_powdery_mildew": {
+    "crop": "Pea",
+    "crop_hi": "मटर",
+    "disease": "Pea Powdery Mildew (Erysiphe pisi)",
+    "disease_hi": "मटर का चूर्णिल आसिता (एरीसाइफी पिसी)",
+    "is_healthy": false,
+    "severity": "High",
+    "description": "Fungal pathogen that blankets pea foliage, stems, and pods in white powder, drastically reducing photosynthesis and pod quality.",
+    "description_hi": "मटर की पत्तियों और फलियों पर सफेद चूने जैसा पाउडर फैलाने वाला रोग, जिससे फलियां खराब हो जाती हैं।",
+    "symptoms": [
+      "White powdery coating developing on upper leaf surfaces, progressing to stems and pods.",
+      "Infected leaves turn yellow, then brown, and wither.",
+      "Pods become discolored, small, and unmarketable."
+    ],
+    "symptoms_hi": [
+      "पत्तियों की ऊपरी सतह, तनों और फलियों पर सफेद पाउडर की परत।",
+      "पत्तियां पीली और भूरी होकर मुरझा जाती हैं।",
+      "फलियां छोटी, बदरंग और खाने लायक नहीं रहतीं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray Wettable Sulfur 80% WDG @ 2.5 g/L or milk solution (1:9 with water).",
+        "Neem oil spray (5 ml/L) mixed with mild liquid soap."
+      ],
+      "chemical": [
+        "Spray Dinocap 48% EC @ 1 ml/L or Hexaconazole 5% EC @ 2 ml/L or Azoxystrobin 23% SC @ 1 ml/L."
+      ]
+    },
+    "prevention": [
+      "Plant powdery mildew-resistant varieties (e.g., Rachna, Pant Matar 5, Swarna Mukti).",
+      "Sow early in the autumn season to avoid peak disease weather.",
+      "Destroy and burn infected crop residue after final harvest."
+    ],
+    "next_steps": "Apply wettable sulfur or dinocap immediately to preserve pod filling."
+  },
+  "pea_downy_mildew": {
+    "crop": "Pea",
+    "crop_hi": "मटर",
+    "disease": "Pea Downy Mildew (Peronospora viciae)",
+    "disease_hi": "मटर का मृदुरोमिल आसिता (डाउनी मिल्ड्यू)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Cool-season oomycete disease causing yellow patches on top of leaves and downy violet-gray felt beneath.",
+    "description_hi": "ठंडे और नम मौसम का रोग जो पत्ती के ऊपर पीले धब्बे और नीचे बैंगनी-स्लेटी रोएंदार फफूंद बनाता है।",
+    "symptoms": [
+      "Pale chlorotic blotches on the upper surface of leaves.",
+      "Fluffy grayish-purple or violet downy fungal growth on the underside of leaves.",
+      "Pods develop internal cottony growth and seed abortion."
+    ],
+    "symptoms_hi": [
+      "पत्तियों की ऊपरी सतह पर हल्के पीले धब्बे।",
+      "पत्ती के नीचे स्लेटी-बैंगनी रोएंदार फफूंद।",
+      "फलियों के अंदर सफेद रुई जैसा जाला और बीज का खराब होना।"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray Copper Oxychloride 50% WP @ 2.5 g/L.",
+        "Ensure wide plant spacing and excellent drainage."
+      ],
+      "chemical": [
+        "Spray Metalaxyl 8% + Mancozeb 64% WP @ 2.5 g/L or Fosetyl-Al 80% WP @ 2 g/L."
+      ]
+    },
+    "prevention": [
+      "Avoid planting in waterlogged or low-lying heavy clay soils.",
+      "Treat seeds with Metalaxyl @ 2 g/kg seed before planting.",
+      "Use certified disease-free pea seeds."
+    ],
+    "next_steps": "Improve bed drainage and apply systemic metalaxyl-mancozeb."
+  },
+  "pea_rust": {
+    "crop": "Pea",
+    "crop_hi": "मटर",
+    "disease": "Pea Rust (Uromyces viciae-fabae)",
+    "disease_hi": "मटर का गेरुई / रतुआ रोग (यूरोमाइसेस)",
+    "is_healthy": false,
+    "severity": "Moderate",
+    "description": "Airborne rust fungal pathogen causing yellow and reddish-brown powdery pustules on foliage and stems.",
+    "description_hi": "हवा से फैलने वाला फफूंद रोग जो पत्तियों और तनों पर पीले और लाल-भूरे रंग के फफोले बनाता है।",
+    "symptoms": [
+      "Circular yellowish-brown pustules on both leaf surfaces and stems.",
+      "Later in the season, pustules turn dark brown to black (teleutospore stage).",
+      "Premature defoliation and poor pod set."
+    ],
+    "symptoms_hi": [
+      "पत्तियों और तनों पर पीले-भूरे रंग के गोल फफोले।",
+      "मौसम के अंत में फफोले काले रंग के हो जाते हैं।",
+      "पत्तियां जल्दी झड़ जाती हैं और फलियां कम लगती हैं।"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply Wettable Sulfur 80% WP @ 3 g/L.",
+        "Spray Panchagavya (3%) preventive spray."
+      ],
+      "chemical": [
+        "Spray Mancozeb 75% WP @ 2.5 g/L or Propiconazole 25% EC @ 1 ml/L."
+      ]
+    },
+    "prevention": [
+      "Collect and burn crop stubble.",
+      "Practice crop rotation with cereals."
+    ],
+    "next_steps": "Spray mancozeb or propiconazole at first appearance."
+  },
+  "pea_healthy": {
+    "crop": "Pea",
+    "crop_hi": "मटर",
+    "disease": "Healthy Pea Plant",
+    "disease_hi": "स्वस्थ मटर का पौधा",
+    "is_healthy": true,
+    "severity": "None",
+    "description": "Vibrant climbing pea vine with clear blue-green foliage, vigorous tendrils, healthy white blossoms, and crisp pods.",
+    "description_hi": "स्वस्थ और हरी-भरी मटर की बेल, सुंदर फूल और पुष्ट फलियां, किसी भी रोग या कीट से मुक्त।",
+    "symptoms": [
+      "Clean, unblemished light green to blue-green foliage.",
+      "Strong tendril climbing habit and abundant blossom development.",
+      "Plump, smooth, spotless pea pods."
+    ],
+    "symptoms_hi": [
+      "साफ, बिना धब्बे वाली नीली-हरी पत्तियां।",
+      "मजबूत बेल और अच्छे फूल।",
+      "भरी हुई, चमकदार और बेदाग फलियां।"
+    ],
+    "treatment": {
+      "organic": [
+        "Maintain rhizobium inoculant nodulation health.",
+        "Provide sturdy bamboo or trellis support."
+      ],
+      "chemical": [
+        "No chemical intervention needed."
+      ]
+    },
+    "prevention": [
+      "Keep soil moist during flowering and pod development.",
+      "Scout for pea aphids and thrips."
+    ],
+    "next_steps": "Ensure adequate trellis support and regular harvesting of mature pods."
+  }
+}
