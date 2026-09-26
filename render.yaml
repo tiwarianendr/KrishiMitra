@@ -1,0 +1,39 @@
+services:
+  # KrishiMitra Flask Backend REST API
+  - type: web
+    name: krishimitra-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 120 backend.wsgi:app
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SECRET_KEY
+        generateValue: true
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DATABASE_URL
+        value: sqlite:///krishimitra.db
+
+  # KrishiMitra React Vite Frontend Static Site
+  - type: web
+    name: krishimitra-frontend
+    runtime: static
+    plan: free
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: krishimitra-backend
+          property: host
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

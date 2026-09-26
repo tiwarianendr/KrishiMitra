@@ -78,6 +78,8 @@ export interface AgriResource {
   action_url: string;
 }
 
+const API_BASE_URL = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
+
 class ApiService {
   private getAuthHeaders(): HeadersInit {
     const token = localStorage.getItem("krishimitra_token");
@@ -96,7 +98,8 @@ class ApiService {
       ...(options.headers || {})
     };
 
-    const res = await fetch(endpoint, {
+    const targetUrl = endpoint.startsWith("http") ? endpoint : `${API_BASE_URL}${endpoint}`;
+    const res = await fetch(targetUrl, {
       ...options,
       headers
     });
@@ -158,7 +161,8 @@ class ApiService {
       headers["Authorization"] = `Bearer ${token}`;
     }
 
-    const res = await fetch("/api/predict", {
+    const targetUrl = `${API_BASE_URL}/api/predict`;
+    const res = await fetch(targetUrl, {
       method: "POST",
       headers,
       body: formData
