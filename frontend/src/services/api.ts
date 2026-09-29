@@ -78,7 +78,27 @@ export interface AgriResource {
   action_url: string;
 }
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
+export const DEFAULT_PROD_API_URL = "https://krishimitra-backend-whfg.onrender.com";
+
+export const API_BASE_URL = (
+  import.meta.env.VITE_API_URL || 
+  (import.meta.env.PROD ? DEFAULT_PROD_API_URL : "")
+).replace(/\/$/, "");
+
+export function getImageUrl(path?: string): string {
+  if (!path) return "";
+  if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("blob:") || path.startsWith("data:")) {
+    return path;
+  }
+  return `${API_BASE_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+}
+
+const sanitizePrediction = (p: PredictionResult): PredictionResult => {
+  if (p && p.image_url && p.image_url.startsWith("/")) {
+    p.image_url = `${API_BASE_URL}${p.image_url}`;
+  }
+  return p;
+};
 
 class ApiService {
   private getAuthHeaders(): HeadersInit {
@@ -172,6 +192,9 @@ class ApiService {
     if (!res.ok || data.success === false) {
       throw new Error(data.error || "Failed to analyze leaf image.");
     }
+    if (data.data) {
+      data.data = sanitizePrediction(data.data);
+    }
     return data;
   }
 
@@ -181,11 +204,19 @@ class ApiService {
 
   // History
   async getHistory(page: number = 1, perPage: number = 20): Promise<ApiResponse<{ predictions: PredictionResult[]; total: number; pages: number }>> {
-    return this.request(`/api/history?page=${page}&per_page=${perPage}`);
+    const res = await this.request<ApiResponse<{ predictions: PredictionResult[]; total: number; pages: number }>>(`/api/history?page=${page}&per_page=${perPage}`);
+    if (res.data?.predictions) {
+      res.data.predictions = res.data.predictions.map(sanitizePrediction);
+    }
+    return res;
   }
 
   async getPredictionDetails(id: number): Promise<ApiResponse<PredictionResult>> {
-    return this.request(`/api/history/${id}`);
+    const res = await this.request<ApiResponse<PredictionResult>>(`/api/history/${id}`);
+    if (res.data) {
+      res.data = sanitizePrediction(res.data);
+    }
+    return res;
   }
 
   async deletePrediction(id: number): Promise<ApiResponse<void>> {

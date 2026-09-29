@@ -7,6 +7,37 @@ load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# Default origins permitted for CORS (Local dev, Vercel production, and Vercel preview deploys)
+DEFAULT_CORS_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173",
+    "https://krishi-mitra-woad.vercel.app",
+    r"^https:\/\/.*\.vercel\.app$",
+]
+
+def parse_cors_origins(raw_env: str | None = None) -> list:
+    if raw_env is None:
+        raw_env = os.getenv("CORS_ORIGINS", "")
+    raw_env = raw_env.strip()
+    origins = list(DEFAULT_CORS_ORIGINS)
+    if raw_env:
+        if raw_env == "*":
+            return ["*"]
+        for origin in raw_env.split(","):
+            cleaned = origin.strip()
+            # Only include valid URL schemes, regexes, or wildcard
+            if cleaned and (
+                cleaned.startswith("http://")
+                or cleaned.startswith("https://")
+                or cleaned.startswith("^")
+                or cleaned == "*"
+            ):
+                if cleaned not in origins:
+                    origins.append(cleaned)
+    return origins
+
 class Config:
     SECRET_KEY = os.getenv("SECRET_KEY", "krishimitra-dev-secret-key-change-in-prod-98745")
     JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "krishimitra-jwt-secret-key-super-secure-32145")
@@ -47,4 +78,5 @@ class Config:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 
     # CORS
-    CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*").split(",")
+    CORS_ORIGINS = parse_cors_origins()
+

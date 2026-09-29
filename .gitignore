@@ -19,6 +19,8 @@ htmlcov/
 .env
 .env.*
 !.env.example
+!frontend/.env.production
+!frontend/.env.example
 
 # Database
 *.db

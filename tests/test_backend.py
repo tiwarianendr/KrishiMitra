@@ -160,3 +160,31 @@ def test_assistant_chat(client):
     hi_data = hi_res.get_json()
     assert hi_data["success"] is True
     assert "रतुआ" in hi_data["data"]["response"] or "गेहूं" in hi_data["data"]["response"]
+
+def test_cors_headers(client):
+    # Test production Vercel frontend origin
+    prod_origin = "https://krishi-mitra-woad.vercel.app"
+    res = client.get("/api/health", headers={"Origin": prod_origin})
+    assert res.status_code == 200
+    assert res.headers.get("Access-Control-Allow-Origin") == prod_origin
+    assert res.headers.get("Access-Control-Allow-Credentials") == "true"
+
+    # Test Vercel preview deployment origin
+    preview_origin = "https://krishimitra-preview-branch1.vercel.app"
+    res_prev = client.get("/api/health", headers={"Origin": preview_origin})
+    assert res_prev.status_code == 200
+    assert res_prev.headers.get("Access-Control-Allow-Origin") == preview_origin
+
+    # Test OPTIONS preflight request
+    opts = client.options("/api/auth/login", headers={
+        "Origin": prod_origin,
+        "Access-Control-Request-Method": "POST",
+        "Access-Control-Request-Headers": "Content-Type,Authorization"
+    })
+    assert opts.status_code == 200
+    assert opts.headers.get("Access-Control-Allow-Origin") == prod_origin
+    assert "POST" in opts.headers.get("Access-Control-Allow-Methods", "")
+
+    # Test arbitrary untrusted origin
+    untrusted = client.get("/api/health", headers={"Origin": "https://unauthorized-domain.com"})
+    assert untrusted.headers.get("Access-Control-Allow-Origin") is None
