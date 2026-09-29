@@ -40,7 +40,10 @@ export const WeatherWidget: React.FC = () => {
     }
   };
 
-  useEffect(() => {
+  const detectLocationAndFetch = () => {
+    setIsLoading(true);
+    setError(null);
+
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
         async (position) => {
@@ -52,33 +55,54 @@ export const WeatherWidget: React.FC = () => {
           // Attempt reverse geocoding for city / district
           try {
             const locRes = await api.reverseGeocode(lat, lon);
-            const city = locRes.data?.city || locRes.data?.district || "Local Farm";
+            const city = (locRes.data?.city && locRes.data.city !== "Unknown")
+              ? locRes.data.city
+              : (locRes.data?.district && locRes.data.district !== "Unknown")
+                ? locRes.data.district
+                : (locRes.data?.state || "Local Farm");
             setLocationName(city);
             fetchWeather(lat, lon, city);
           } catch {
-            fetchWeather(lat, lon, "Your GPS Location");
+            const fallbackLabel = "GPS Location";
+            setLocationName(fallbackLabel);
+            fetchWeather(lat, lon, fallbackLabel);
           }
         },
         (_err) => {
           setGeoState("denied");
-          // Fallback to central Indian agri hub coordinates (Bhopal / Delhi)
+          // Fallback to central Indian regional agricultural coordinates
           const fallbackLat = 28.6139;
           const fallbackLon = 77.2090;
           setCoords({ lat: fallbackLat, lon: fallbackLon });
-          setLocationName("New Delhi (Regional)");
-          fetchWeather(fallbackLat, fallbackLon, "Regional Agriculture Station");
+          const defaultLabel = "New Delhi (Regional)";
+          setLocationName(defaultLabel);
+          fetchWeather(fallbackLat, fallbackLon, defaultLabel);
         },
-        { timeout: 7000 }
+        { 
+          enableHighAccuracy: false, 
+          timeout: 10000, 
+          maximumAge: 300000 
+        }
       );
     } else {
       setGeoState("denied");
-      fetchWeather(28.6139, 77.2090, "North Central Station");
+      const fallbackLat = 28.6139;
+      const fallbackLon = 77.2090;
+      setCoords({ lat: fallbackLat, lon: fallbackLon });
+      setLocationName("New Delhi (Regional)");
+      fetchWeather(fallbackLat, fallbackLon, "Regional Agriculture Station");
     }
+  };
+
+  useEffect(() => {
+    detectLocationAndFetch();
   }, []);
 
   const handleRefresh = () => {
-    if (coords) {
+    if (geoState === "granted" && coords) {
       fetchWeather(coords.lat, coords.lon, locationName);
+    } else {
+      detectLocationAndFetch();
     }
   };
 
@@ -102,10 +126,15 @@ export const WeatherWidget: React.FC = () => {
             <h3 className="text-base font-bold text-stone-900 leading-tight">
               {t.weather.title}
             </h3>
-            <div className="flex items-center gap-1 text-xs text-stone-500 font-medium">
-              <MapPin className="w-3.5 h-3.5 text-emerald-600" />
-              <span>{locationName || (geoState === "pending" ? t.dashboard.detectingLocation : "Farm Region")}</span>
-            </div>
+            <button
+              type="button"
+              onClick={detectLocationAndFetch}
+              className="flex items-center gap-1 text-xs text-stone-500 hover:text-emerald-700 font-medium transition-colors text-left"
+              title="Click to detect current GPS location"
+            >
+              <MapPin className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <span className="truncate max-w-[170px]">{locationName || (geoState === "pending" ? t.dashboard.detectingLocation : "Farm Region")}</span>
+            </button>
           </div>
         </div>
 
@@ -219,7 +248,14 @@ export const WeatherWidget: React.FC = () => {
           <div className="flex items-center justify-between text-[11px] text-stone-400">
             <span>{t.weather.updated}: {weather.last_updated}</span>
             {geoState === "denied" && (
-              <span className="text-amber-600 font-medium">GPS Off</span>
+              <button
+                type="button"
+                onClick={detectLocationAndFetch}
+                className="text-amber-600 hover:text-amber-700 font-medium hover:underline flex items-center gap-1"
+                title="Click to retry GPS detection"
+              >
+                GPS Off (Retry)
+              </button>
             )}
           </div>
         </div>

@@ -51,7 +51,12 @@ export const ResourcesPage: React.FC = () => {
           setCoords({ lat, lon });
           try {
             const locRes = await api.reverseGeocode(lat, lon);
-            setLocationLabel(locRes.data?.formatted_address || `${lat.toFixed(2)}, ${lon.toFixed(2)}`);
+            const address = (locRes.data?.formatted_address && !locRes.data.formatted_address.includes("Unknown"))
+              ? locRes.data.formatted_address
+              : (locRes.data?.city && locRes.data.city !== "Unknown")
+                ? locRes.data.city
+                : `${lat.toFixed(2)}, ${lon.toFixed(2)}`;
+            setLocationLabel(address);
           } catch {
             setLocationLabel(`${lat.toFixed(2)}, ${lon.toFixed(2)}`);
           }
@@ -65,7 +70,7 @@ export const ResourcesPage: React.FC = () => {
           setLocationLabel("Central Agriculture Zone (Delhi / NCR)");
           fetchResources(defaultLat, defaultLon, activeCategory);
         },
-        { timeout: 8000 }
+        { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
       );
     } else {
       fetchResources(28.6139, 77.2090, activeCategory);

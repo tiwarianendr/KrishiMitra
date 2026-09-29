@@ -12,7 +12,7 @@ def get_weather():
     loc_name = request.args.get("location_name", type=str)
 
     # If coordinates are missing or invalid, default to representative central agricultural zone (e.g., Bhopal / New Delhi)
-    if lat is None or lon is None:
+    if lat is None or lon is None or not (-90.0 <= lat <= 90.0) or not (-180.0 <= lon <= 180.0):
         lat, lon = 28.6139, 77.2090
         loc_name = loc_name or "New Delhi (Default)"
 
